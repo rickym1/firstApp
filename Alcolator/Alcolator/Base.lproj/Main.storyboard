@@ -33,7 +33,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="NXu-1n-hOk">
                                 <rect key="frame" x="241" y="58" width="118" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-nQ-0OU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-nQ-0OU">
                                 <rect key="frame" x="274" y="163" width="53" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,9 +52,16 @@
                             <constraint firstItem="efF-Bc-qh7" firstAttribute="centerX" secondItem="NXu-1n-hOk" secondAttribute="centerX" constant="0.5" id="t4E-wl-8Ps"/>
                             <constraint firstItem="m3b-hp-X62" firstAttribute="centerX" secondItem="NXu-1n-hOk" secondAttribute="centerX" id="vJI-n1-1Hs"/>
                             <constraint firstItem="m3b-hp-X62" firstAttribute="width" secondItem="NXu-1n-hOk" secondAttribute="width" id="vSi-8W-Xg8"/>
+                            <constraint firstItem="1Lf-nQ-0OU" firstAttribute="width" secondItem="efF-Bc-qh7" secondAttribute="width" id="yA8-2T-wF8"/>
                             <constraint firstItem="efF-Bc-qh7" firstAttribute="top" secondItem="NXu-1n-hOk" secondAttribute="bottom" constant="21" id="z7r-rV-SZP"/>
                             <constraint firstItem="m3b-hp-X62" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zvL-QS-7Vr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="I1k-gN-hlj"/>
+                                <exclude reference="hom-d2-Ufd"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="7xA-Lm-7ho" appends="YES" id="8Lg-TO-nep"/>
                         </connections>
